@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','jango-blog.vercel.app']
 
-WSGI_APPLICATION = 'vercel_app.wsgi.app'
+
 
 # Application definition
 
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'jango_blog.wsgi.application'
+WSGI_APPLICATION = 'jango_blog.wsgi.app'
 
 
 # Database
