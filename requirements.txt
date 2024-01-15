@@ -9,6 +9,7 @@ django-svg-templatetag==1.0.1
 idna==3.4
 Pillow==10.0.0
 psycopg2==2.9.9
+psycopg2-binary==2.9.9
 pytz==2023.3
 requests==2.31.0
 sqlparse==0.4.4
