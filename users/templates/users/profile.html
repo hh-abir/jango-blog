@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
     <div class="d-md-flex p-3 align-items-center border border-1">
-        <img class="rounded-circle me-4" height="125px" width="125px"  src="{{user.profile.image.url}}" alt="profile_pic">
+        <img class="rounded-circle me-4" height="125px" width="125px"  src="{{user.profile.image}}" alt="profile_pic">
         <div>
             <h2>{{ request.user.username}} </h2>
             <p class="text-muted">{{ request.user.email}} </p>

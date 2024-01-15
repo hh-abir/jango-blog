@@ -3,7 +3,7 @@
 {% for post in posts %}
 <div class="d-flex border border-2 my-2 rounded">
     <div class="mt-1 p-2">
-        <img class="rounded-circle " style="height: 70px; width: 70px;" src="{{post.author.profile.image.url}}" alt="">
+        <img class="rounded-circle " style="height: 70px; width: 70px;" src="{{post.author.profile.image}}" alt="">
     </div>
     <div class="card flex-fill border-start-0">
         <h5 class="card-header"><span style="color: #6699ff"><a class="text-decoration-none" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a></span> | <span
