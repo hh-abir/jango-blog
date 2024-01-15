@@ -2,8 +2,9 @@ asgiref==3.7.2
 certifi==2023.7.22
 chardet==5.2.0
 charset-normalizer==3.2.0
+crispy-bootstrap5==2023.10
 Django==4.2.4
-django-bootstrap-form==3.4
+django-crispy-forms==2.1
 django-svg-templatetag==1.0.1
 idna==3.4
 Pillow==10.0.0

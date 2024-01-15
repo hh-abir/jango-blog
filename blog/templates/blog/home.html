@@ -9,8 +9,9 @@
         <h5 class="card-header"><span style="color: #6699ff"><a class="text-decoration-none" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a></span> | <span
                 style="font-size: small; color: grey">{{ post.date_posted|date:"F d, Y"}}</span> </h5>
         <div class="card-body">
-            <h5 class="card-title">{{ post.title }}</h5>
-            <p class="card-text">{{ post.content }}</p>
+            <h5 class="card-title">{{ post.title|truncatewords:6 }}</h5>
+            <p class="card-text">{{ post.content|truncatewords:15 }}</p>
+
             <a href="{% url 'post-detail' post.id  %}" class="text-decoration-none">Read more</a>
         </div>
     </div>

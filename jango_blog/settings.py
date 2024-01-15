@@ -25,13 +25,14 @@ SECRET_KEY = 'django-insecure-kq7ti3t2bskk-)^(w^sv5jim1tu=t)ic@sctcb&n91h2rr^*dy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.104',]
+ALLOWED_HOSTS = ['vercel.app']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'bootstrapform',
+    'crispy_forms',
+    "crispy_bootstrap5",
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'django.contrib.admin',
@@ -135,7 +136,8 @@ MEDIA_URL = '/media/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
+EMAIL_PORT = 25
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "hossainhasib39@gmail.com"
-EMAIL_HOST_PASSWORD = "@yep2410"
+EMAIL_HOST_PASSWORD = "xfjj pptn bxli jgbq"
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
