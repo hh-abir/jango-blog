@@ -31,6 +31,4 @@ urlpatterns = [
     path('', include('blog.urls'))
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
-# Remove this
-urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT_IMG)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
